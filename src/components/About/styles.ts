@@ -7,7 +7,6 @@ export const AboutContainer = styled.main`
   justify-content: center;
   width: 100%;
   height: 100vh;
-  position: relative;
 `;
 
 export const AboutVideoContainer = styled.div`
@@ -16,26 +15,30 @@ export const AboutVideoContainer = styled.div`
   left: 0;
   height: 100vh;
   filter: brightness(0.8);
-  position: absolute;
-`;
+  position: fixed;
+  
+  `;
 
 export const Video = styled.video`
+  z-index: -222;
   width: 100%;
   height: 100%;
   object-fit: fill;
+
 `;
 
 export const AboutContent = styled.div`
   display: flex;
   flex-direction: column;
+  align-self: center;
   align-content: flex-start;
-  width: 100%;
+  width: 70%;
   height: 100%;
 
   position: absolute;
   top: 0;
   left: 0;
-
+  z-index: 0;
 
   background: linear-gradient(90deg,black, rgba(2,2,2, 90%), transparent);
   `
@@ -53,15 +56,20 @@ export const AboutTitle = styled.h1`
     font-size: 3rem;
     text-shadow: 2px 2px 3px ${props => props.theme.colors.purpleLight};
     span {
-      font-size: 6rem;
+      font-size: 2rem;
+      text-shadow: none;
+      line-height: 1;
     }
+
+    z-index: 11;
   `
 
 export const Button = styled.button`
     align-self: flex-start;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
     padding: 2rem 4rem;
-    background: ${props => props.theme.colors.red};
+    background: ${props => props.theme.colors.purpleDark};
     color: ${props => props.theme.colors.white};
     font-size: 2rem;
     line-height: .1rem;
@@ -70,8 +78,9 @@ export const Button = styled.button`
     transition: all 0.2s ease-in-out;
 
     &:hover {
+      filter: brightness(1.2)
     }
-     `
+`
 
 
 
