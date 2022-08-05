@@ -6,7 +6,7 @@ export const footerLinks = {
   },
 
   phoneNumber: {
-    number: '(27) 3202-2600',
+    number: '(27) 3202-26000',
   },
 
   authors: [
