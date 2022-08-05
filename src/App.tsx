@@ -6,6 +6,9 @@ import store from './redux/store';
 import { GlobalStyles } from './styles/global/GlobalStyles';
 import { defaultTheme } from './styles/themes';
 import { BrowserRouter } from 'react-router-dom';
+import wineVideo from '../src/assets/wine-007.mp4';
+
+import * as S from './App..style'
 
 const App = () => (
   <Provider store={store}>
@@ -20,7 +23,12 @@ const App = () => (
       >
         <GlobalStyles />
         <BrowserRouter>
+          <S.AboutContent>
+          <S.AboutVideoContainer>
+            <S.Video autoPlay loop muted src={wineVideo} />
+          </S.AboutVideoContainer>
           <Home />
+          </S.AboutContent>
         </BrowserRouter>
       </IconContext.Provider>
     </ThemeProvider>

@@ -59,8 +59,8 @@ export const Footer: FC = () => {
           </S.ItemContent>
 
           <S.ItemContent>
-            <h3>{t('texts.socialMedia')}</h3>
             <S.SocialNetworks>
+            <h3>{t('texts.socialMedia')}</h3>
               <SocialMediaLinks />
             </S.SocialNetworks>
           </S.ItemContent>
@@ -69,11 +69,11 @@ export const Footer: FC = () => {
 
       </S.FooterContent>
 
-      <S.FooterContent>
+      <hr style={{margin: "30px"}}/>
         <S.Copyright>
-          © {currentYear} <b>Grupo 007</b> | {t('texts.copyright')}
+          © {currentYear} <b>Grupo 007</b> <br/> {t('texts.copyright')}
         </S.Copyright>
-      </S.FooterContent>
+      
       <LanguageSelector />
 
     </S.FooterContainer>

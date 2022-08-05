@@ -9,11 +9,12 @@ export const Header: FC = () => (
   <S.HeaderContainer data-testid="header">
     <S.HeaderContent>
       <Logo />
-      <Menu>
+
+      <Menu />
         <S.WineBox>
           <img src={winebox} />
         </S.WineBox>
-      </Menu>
+      
     </S.HeaderContent>
   </S.HeaderContainer>
 );

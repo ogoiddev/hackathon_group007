@@ -3,63 +3,33 @@ import styled from 'styled-components';
 export const AboutContainer = styled.main`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100vh;
+  background: transparent;
 `;
 
-export const AboutVideoContainer = styled.div`
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  filter: brightness(0.8);
-  position: fixed;
-  
-  `;
-
-export const Video = styled.video`
-  z-index: -222;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-
-`;
-
-export const AboutContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-content: flex-start;
-  width: 70%;
-  height: 100%;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-
-  background: linear-gradient(90deg,black, rgba(2,2,2, 90%), transparent);
-  `
 
 export const AboutTitle = styled.h1`
-    padding: 0 6rem;
+    padding: 0 2rem;
+    
     display: flex;
     flex-direction: column;
     gap: 1rem;
     justify-content: center;
     color: ${props => props.theme.colors.white};
     width: 60%;
-    min-width: 600px;
+    min-width: 400px;
     height: 100%;
     font-size: 3rem;
     text-shadow: 2px 2px 3px ${props => props.theme.colors.purpleLight};
+    margin: 150px 10%;
+    
     span {
       font-size: 2rem;
       text-shadow: none;
       line-height: 1;
     }
+    
 
     z-index: 11;
   `

@@ -5,7 +5,7 @@ import { OffersButtonProps, TextProps } from './@types';
 export const OffersContainer = styled.section`
   display: flex;
   justify-content: center;
-
+  background-color: ${({ theme }) => theme.colors.purple};
   width: 100%;
   height: 100vh;
 `;
@@ -33,8 +33,9 @@ export const OffersWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 100%;
+  width: 80%;
   justify-content: space-between;
+  
 
   max-width: 1200px;
   text-transform: uppercase;
@@ -179,7 +180,7 @@ export const OffersButton = styled.button<OffersButtonProps>`
   border-radius: 5px;
   font-size: 24px;
   font-weight: 500;
-  height: 100px;
+  height: 80px;
   width: 300px;
   display: flex;
   align-items: center;

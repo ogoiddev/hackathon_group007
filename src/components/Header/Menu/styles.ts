@@ -5,16 +5,17 @@ export const MenuContainer = styled.nav`
   display: flex;
   align-items: center;
   gap: 2rem;
-`;
+  `;
 
 export const MenuButton = styled.button`
   display: flex;
   background: none;
   border: none;
   cursor: pointer;
-
+  
   @media (min-width: 1024px) {
     display: none;
+    
   }
 `;
 

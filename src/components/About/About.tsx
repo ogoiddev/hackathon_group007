@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import wineVideo from '../../assets/wine-007.mp4';
 import { namespaces } from 'i18n/i18n.constants';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
@@ -11,10 +10,7 @@ export const About: FC = () => {
   const navigate = useNavigate();
   return(
     <S.AboutContainer>
-    <S.AboutVideoContainer>
-      <S.Video autoPlay loop muted src={wineVideo} />
-    </S.AboutVideoContainer>
-    <S.AboutContent>
+    
       <S.AboutTitle>
           {t('texts.beWine')}
           <span>
@@ -25,7 +21,7 @@ export const About: FC = () => {
           </span>
         <S.Button onClick={() => navigate('/signup')}>{t('texts.signUpBtn')}</S.Button>
       </S.AboutTitle>
-    </S.AboutContent>
+    
   </S.AboutContainer>
   );
 }

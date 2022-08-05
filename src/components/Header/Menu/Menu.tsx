@@ -8,7 +8,7 @@ import { headerLinks } from 'services/data/header/links';
 import * as S from './styles';
 import { MenuProps } from './@types';
 
-export const Menu: FC<MenuProps> = ({ children }) => {
+export const Menu: FC = () => {
   const { t } = useTranslation(namespaces.header);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +37,6 @@ export const Menu: FC<MenuProps> = ({ children }) => {
           ),
         )}
       </S.LinksContainer>
-      <div>{children}</div>
     </S.MenuContainer>
   );
 };
